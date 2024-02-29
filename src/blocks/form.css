@@ -1,17 +1,4 @@
 .form {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.form__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.form__inputs {
   display: flex;
   flex-direction: column;
   border: solid;
