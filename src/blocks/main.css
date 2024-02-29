@@ -6,9 +6,9 @@
 
 .main__header {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  gap: 36px;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  gap: 12px;
   align-items: center;
   max-width: 800px;
   margin: auto;
@@ -20,15 +20,18 @@
   font-weight: 600;
   /* margin-top: 143px; */
   height: 50px;
+  font-size: 42px;
 }
 
 .main__info-text {
   display: flex;
   justify-content: flex-end;
   font-family: "Figtree";
+  font-size: 20px;
 }
 
 .main__weather-text {
   display: flex;
   justify-content: flex-end;
+  font-size: 20px;
 }
