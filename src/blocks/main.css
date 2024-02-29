@@ -13,6 +13,6 @@
 }
 
 .main__weather-text {
-    display: fle;
+    display: flex;
     justify-content: flex-end;
 }
