@@ -5,8 +5,10 @@
 }
 
 .forms__container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 250px);
+  grid-gap: 20px 25px;
+  /*flex-direction: column;*/
   justify-content: center;
   align-items: center;
 }

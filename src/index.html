@@ -20,15 +20,25 @@
       <p class="main__info-text">Tue, Feb 27</p>
       <p class="main__info-text">67 C</p>
       <!-- below will be the to do lists -->
+
+      <!-- below I have a div that will act like a left nav bar but with only the add to-do button... not sure if that's the right way to go about having the button on the left-->
       <div class="nav">
         <button class="nav__button" type="button"></button>
       </div>
       <section class="forms">
         <div class="forms__container">
           <div class="form">
-            <input class="form__title" type="text" placeholder="Add Title" />
-            <input class="form__date" type="date" />
-            <input class="form__task-input" />
+            <div class="form__header">
+              <input class="form__title" type="text" placeholder="Add Title" />
+              <input class="form__date" type="date" />
+              <button class="form__delete-button"></button>
+              <!-- Please note that I didn't add a type -->
+            </div>
+            <input
+              class="form__task-input"
+              type="text"
+              placeholder="+ Add a task"
+            />
           </div>
         </div>
       </section>
