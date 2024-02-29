@@ -6,12 +6,11 @@
 
 .main__header {
   display: flex;
-  /* flex-direction: row; */
+  flex-direction: row;
   justify-content: space-between;
-  gap: 12px;
   align-items: center;
-  max-width: 800px;
-  margin: auto;
+  width: 750px;
+  margin: 36px auto;
 }
 
 .main__header-text {
@@ -20,6 +19,7 @@
   /* margin-top: 143px; */
   height: 50px;
   font-size: 42px;
+  margin: 0;
 }
 
 .main__info-text {
@@ -27,6 +27,7 @@
   justify-content: flex-end;
   font-family: "Figtree";
   font-size: 20px;
+  margin: 0;
 }
 
 .main__weather-text {
@@ -34,4 +35,19 @@
   justify-content: flex-end;
   font-size: 20px;
   font-family: "Figtree";
+  margin: 0;
+}
+
+.main__info-container {
+  display: flex;
+  flex-direction: row;
+  gap: 36px;
+  width: 205px;
+}
+
+.main__span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3px;
 }

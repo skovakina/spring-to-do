@@ -24,11 +24,17 @@
     </header>
     <main class="main">
       <div class="main__header">
-        <h1 class="main__header-text">Hello Emily!</h1>
+        <div>
+          <h1 class="main__header-text">Hello Emily!</h1>
+        </div>
         <!-- js handles current day and temperature -->
-        <p class="main__info-text">Text</p>
-        <img class="main__info-weather-icon" />
-        <p class="main__weather-text">Text</p>
+        <div class="main__info-container">
+          <p class="main__info-text"></p>
+          <span class="main__span">
+            <img class="main__info-weather-icon" alt="weather" />
+            <p class="main__weather-text"></p>
+          </span>
+        </div>
       </div>
       <!-- below will be the to do lists -->
       <section class="forms">
@@ -36,7 +42,7 @@
           <button class="forms__nav-button" type="button"></button>
         </div>
         <div class="forms__container">
-          <div class="form">
+          <div class="form form_default">
             <div class="form__header">
               <input class="form__title" type="text" placeholder="Add Title" />
               <input class="form__date" type="date" />
