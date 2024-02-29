@@ -1,4 +1,11 @@
+.header {
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  padding: 26px 0 26px;
+}
+
 .header__header {
-    display: flex;
-    
+  margin: 0;
+  padding: 0;
 }
