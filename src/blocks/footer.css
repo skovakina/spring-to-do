@@ -1,0 +1,9 @@
+.footer {
+  padding: 41px 0 37px;
+}
+
+.footer__text {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+}
