@@ -1,0 +1,9 @@
+.nav {
+}
+
+.nav__button {
+  background: transparent url(../images/Frame\ 21.svg) center no-repeat;
+  border-style: none;
+  width: 250px;
+  height: 40px;
+}
