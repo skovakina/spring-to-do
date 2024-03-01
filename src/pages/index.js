@@ -1,6 +1,7 @@
 import "./index.css";
 import data from "../utils/data.js";
 import { getWeather } from "../utils/weatherApi";
+import List from "../components/List.js";
 
 // show the weather and temp
 const tempElement = document.querySelector(".main__weather-text");
@@ -40,18 +41,18 @@ todayElement.textContent = date.toLocaleString("en-US", {
 });
 
 // add new list
-const btnNewList = document.querySelector(".nav__button");
+const btnNewList = document.querySelector(".forms__nav-button");
 const formDefault = document.querySelector(".form_default");
 const formContainer = document.querySelector(".forms__container");
 btnNewList.addEventListener("click", () => {
   const newForm = formDefault.cloneNode(true);
   formContainer.appendChild(newForm);
-  const btnFormDelete = document.querySelector(".form__delete-button");
+  //const btnFormDelete = document.querySelector(".form__delete-button");
 });
 
 // delete new list
 
-console.log(btnFormDelete);
+// console.log(btnFormDelete);
 
 const handleDelete = () => {
   btnFormDelete.addEventListener("click", (e) => {
@@ -59,3 +60,16 @@ const handleDelete = () => {
     form.remove();
   });
 };
+
+// render all lists
+const createList = (data) => {
+  data.map((item) => {
+    const list = new List(item, ".template-list", () => {
+      console.log("click!");
+    });
+    const listElement = list.getListElement();
+    formContainer.appendChild(listElement);
+  });
+};
+
+createList(data);

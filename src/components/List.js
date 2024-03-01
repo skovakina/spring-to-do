@@ -23,14 +23,28 @@ export default class List {
     this._element.remove();
   }
 
+  renderInput(data) {
+    return `
+            <div>
+             <input type="checkbox" value="${data}" id="${data}">
+             <label for="${data}">"${data}"</label>
+            </div>
+
+    `;
+  }
+
   getListElement() {
     this._element = this._getTemplate();
     this._listTitleElement = this._element.querySelector(".form__title");
     this._btnDelete = this._element.querySelector(".form__delete-button");
+    this._listDateElement = this._element.querySelector(".form__date");
     this._listItemElement = this._element.querySelector(".form__task-input");
-    this._listTitleElement.textContent = this._title;
-    this._items.map((item) => {
-      this._listItemElement.textContent = item;
+    this._listContainerElement = this._element.querySelector(".form__list");
+    this._listTitleElement.value = this._title;
+    this._listDateElement.value = this._date;
+
+    this._items.forEach((item) => {
+      this._listContainerElement.innerHTML += this.renderInput(item);
     });
     this._setEventListeners();
     return this._element;
