@@ -1,12 +1,15 @@
+.form {
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
 .form__container {
   width: 250px;
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
-  border-radius: 8px;
+
   padding: 20px;
   box-sizing: border-box;
-  background-color: #ececec;
 }
 
 .form__header {

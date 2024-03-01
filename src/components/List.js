@@ -5,6 +5,7 @@ export default class List {
     this._items = data.items;
     this._listSelector = listSelector;
     this._handleDeleteButton = handleDeleteButton;
+    this._background = data.background;
   }
 
   _getTemplate() {
@@ -42,6 +43,7 @@ export default class List {
     this._listContainerElement = this._element.querySelector(".form__list");
     this._listTitleElement.value = this._title;
     this._listDateElement.value = this._date;
+    this._element.style.backgroundColor = this._background;
 
     const addItemToContainer = (item) => {
       const inputTemplate = this._getInputTemplate();
