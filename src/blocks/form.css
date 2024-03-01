@@ -2,11 +2,11 @@
   width: 250px;
   display: flex;
   flex-direction: column;
-  border: 2px solid;
-  border-color: black;
+  border: 2px solid black;
   border-radius: 8px;
   padding: 20px;
   box-sizing: border-box;
+  background-color: #ececec;
 }
 
 .form__header {
@@ -30,6 +30,7 @@
   grid-area: title;
   border-style: none;
   padding: 2px;
+  background-color: #ececec;
 }
 
 .form__title::placeholder {
@@ -40,6 +41,7 @@
   height: 20px;
   grid-area: date;
   border-style: none;
+  background-color: #ececec;
 }
 
 .form__delete-button {
