@@ -36,13 +36,3 @@
     max-width: 90%;
   }
 }
-
-@media screen and (max-width: 800px) {
-  .main__header {
-    width: 80%;
-  }
-
-  .forms {
-    margin-top: 30px;
-  }
-}
