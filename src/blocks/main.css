@@ -1,9 +1,10 @@
 .main {
   width: 100%;
   background-color: white;
-  height: 900px;
+  min-height: 900px;
   display: flex;
   flex-direction: column;
+  padding: 36px 0 12px;
 }
 
 .main__header {
@@ -12,7 +13,7 @@
   justify-content: space-between;
   align-items: center;
   width: 750px;
-  margin: 36px auto;
+  margin: 0 auto;
 }
 
 .main__header-text {
