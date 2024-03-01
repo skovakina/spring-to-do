@@ -10,11 +10,11 @@ The purpose of this project was to create something that would help your communi
 When a user lands on the page, they will see a "+ Add new list" button which will create a copy of a template "to-do" form. They can then update the title, date, and add a text input, which will be turned into a checkbox list item.
 
 ## Technologies Used ##
-Figma
-HTML
-CSS
-Javascript
-Webpack
+* Figma
+* HTML
+* CSS
+* Javascript
+* Webpack
 
 ## Design and Prototype ##
 Please check out the original Figma design we used for our project below.
