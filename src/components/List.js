@@ -15,7 +15,7 @@ export default class List {
 
   _setEventListeners() {
     this._btnDelete.addEventListener("click", (evt) => {
-      this._handleDeleteButton(this._id, this._element);
+      this._element.remove();
     });
   }
 
@@ -23,11 +23,16 @@ export default class List {
     this._element.remove();
   }
 
+  stringToId(str) {
+    return str.toLowerCase().replace(/\s+/g, "-");
+  }
+
   renderInput(data) {
+    const id = this.stringToId(data);
     return `
-            <div>
-             <input type="checkbox" value="${data}" id="${data}">
-             <label for="${data}">"${data}"</label>
+            <div class="form__task-input-box">
+             <input type="checkbox" value="${data}" id="${id}">
+             <label for="${id}">${data}</label>
             </div>
 
     `;
