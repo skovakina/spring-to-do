@@ -44,11 +44,18 @@ todayElement.textContent = date.toLocaleString("en-US", {
 const btnNewList = document.querySelector(".forms__nav-button");
 const formDefault = document.querySelector(".form_default");
 const formContainer = document.querySelector(".forms__container");
+
 btnNewList.addEventListener("click", () => {
-  console.log("click");
-  const newForm = formDefault.cloneNode(true);
-  formContainer.appendChild(newForm);
-  //const btnFormDelete = document.querySelector(".form__delete-button");
+  const defaultList = {
+    title: "Add Title",
+    date: "",
+    items: [],
+  };
+  const list = new List(defaultList, ".template-list", () => {
+    console.log("click!");
+  });
+  const listElement = list.getListElement();
+  formContainer.appendChild(listElement);
 });
 
 // delete new list

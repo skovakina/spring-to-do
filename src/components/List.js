@@ -27,15 +27,10 @@ export default class List {
     return str.toLowerCase().replace(/\s+/g, "-");
   }
 
-  renderInput(data) {
-    const id = this.stringToId(data);
-    return `
-            <div class="form__task-input-box">
-             <input type="checkbox" value="${data}" id="${id}">
-             <label for="${id}">${data}</label>
-            </div>
-
-    `;
+  _getInputTemplate() {
+    const template = document.querySelector(".template-input").content;
+    const element = template.querySelector(".form__checkbox").cloneNode(true);
+    return element;
   }
 
   getListElement() {
@@ -48,9 +43,35 @@ export default class List {
     this._listTitleElement.value = this._title;
     this._listDateElement.value = this._date;
 
-    this._items.forEach((item) => {
-      this._listContainerElement.innerHTML += this.renderInput(item);
+    const addItemToContainer = (item) => {
+      const inputTemplate = this._getInputTemplate();
+      const checkboxInput = inputTemplate.querySelector(
+        ".form__checkbox-input"
+      );
+      const labelElement = inputTemplate.querySelector(".form__checkbox-label");
+
+      const id = this.stringToId(item);
+      checkboxInput.setAttribute("id", id);
+      checkboxInput.setAttribute("value", item);
+      labelElement.setAttribute("for", id);
+      labelElement.textContent = item;
+
+      this._listContainerElement.appendChild(inputTemplate);
+    };
+
+    this._items.forEach(addItemToContainer);
+
+    this._listItemElement.addEventListener("keypress", (event) => {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        const newItem = this._listItemElement.value.trim();
+        if (newItem !== "") {
+          addItemToContainer(newItem);
+          this._listItemElement.value = "";
+        }
+      }
     });
+
     this._setEventListeners();
     return this._element;
   }

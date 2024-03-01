@@ -45,25 +45,12 @@
         </span>
 
         <ul class="forms__container">
-          <li class="form form_default">
-            <form class="form__container">
-              <div class="form__header">
-                <input
-                  class="form__title"
-                  type="text"
-                  placeholder="Add Title"
-                />
-                <input class="form__date" type="date" />
-                <button class="form__delete-button"></button>
-                <!-- Please note that I didn't add a type -->
-              </div>
-              <input
-                class="form__task-input"
-                type="text"
-                placeholder="+ Add a task"
-              />
-            </form>
-          </li>
+          <template class="template-input">
+            <div class="form__checkbox">
+              <input class="form__checkbox-input" type="checkbox" />
+              <label class="form__checkbox-label"></label>
+            </div>
+          </template>
           <template class="template-list">
             <li class="form form_default">
               <div class="form__container">
