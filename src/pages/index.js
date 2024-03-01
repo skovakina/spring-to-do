@@ -45,6 +45,7 @@ const btnNewList = document.querySelector(".forms__nav-button");
 const formDefault = document.querySelector(".form_default");
 const formContainer = document.querySelector(".forms__container");
 btnNewList.addEventListener("click", () => {
+  console.log("click");
   const newForm = formDefault.cloneNode(true);
   formContainer.appendChild(newForm);
   //const btnFormDelete = document.querySelector(".form__delete-button");
