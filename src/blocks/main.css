@@ -53,3 +53,20 @@
   align-items: center;
   gap: 3px;
 }
+
+@media screen and (max-width: 800px) {
+  .main__header {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main__header {
+    width: 80%;
+  }
+
+  .main__header-text {
+    height: 36px;
+    font-size: 30px;
+  }
+}
