@@ -81,3 +81,6 @@ const createList = (data) => {
 };
 
 createList(data);
+
+// Notes
+// We need to toggle the black checkbox in the form when clicked on

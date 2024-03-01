@@ -24,13 +24,14 @@
   font-size: 20px;
   line-height: 20px;
   height: 20px;
-  width: 107px;
+  max-width: 130px;
   margin-bottom: 5px;
   padding: 0;
   grid-area: title;
   border-style: none;
   padding: 2px;
   background-color: #ececec;
+  text-overflow: ellipsis;
 }
 
 .form__title::placeholder {
@@ -42,6 +43,7 @@
   grid-area: date;
   border-style: none;
   background-color: #ececec;
+  max-width: 130px;
 }
 
 .form__delete-button {
@@ -51,6 +53,10 @@
   width: 20px;
   grid-area: trash;
   margin-left: auto;
+}
+
+.form__delete-button:hover {
+  cursor: pointer;
 }
 
 .form__task-input {
