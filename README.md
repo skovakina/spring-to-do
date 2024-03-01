@@ -4,7 +4,7 @@
 [Spring To-Do Website ](https://skovakina.github.io/spring-to-do/)
 
 ## About the Project ##
-The purpose of this project was to create a minimum viable product that would help your community prepare for the coming of spring. Our team decided to create a to do list website, where a user could create multiple lists and add their own checkboc items.
+The purpose of this project was to create a minimum viable product that would help your community prepare for the coming of spring. Our team decided to create a to-do list website, where a user could create multiple lists and add their own checkbox items.
 
 ## Key Functions ##
 When a user lands on the page, they will see a "+ Add new list" button, along with default to-do lists. When the user clicks the "+ Add new list" button, a copy of a template "to-do" form will be created. The user will then be able to update the title, date, and add a text input, which will be turned into a checkbox list item.
