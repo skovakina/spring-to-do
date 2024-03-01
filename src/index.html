@@ -8,16 +8,13 @@
       name="description"
       content="The all in one solution for your spring cleaning needs. Manage your tasks and chores easily with our interactive to-do list."
     />
-    <!-- This description is just a stand in we could make it better down the road ^^ -->
-    <link rel="stylesheet" href="./pages/index.css" />
     <title>Busy Day</title>
   </head>
-  <!-- bare bones setup right now -->
 
   <body class="page">
     <header class="header">
       <img
-        src="<%=require('./images/Frame 17 (1).svg')%>"
+        src="<%=require('./images/logo.svg')%>"
         alt="Busy Day"
         class="header__header"
       />
@@ -27,7 +24,7 @@
         <div>
           <h1 class="main__header-text">Hello Emily!</h1>
         </div>
-        <!-- js handles current day and temperature -->
+
         <div class="main__info-container">
           <p class="main__info-text"></p>
           <span class="main__span">
@@ -36,11 +33,13 @@
           </span>
         </div>
       </div>
-      <!-- below will be the to do lists -->
+
       <section class="forms">
         <span>
           <div class="forms__nav">
-            <button class="forms__nav-button" type="button"></button>
+            <button class="forms__nav-button" type="button">
+              + Add a new list
+            </button>
           </div>
         </span>
 
@@ -61,8 +60,7 @@
                     placeholder="Add Title"
                   />
                   <input class="form__date" type="date" />
-                  <button class="form__delete-button"></button>
-                  <!-- Please note that I didn't add a type -->
+                  <button type="button" class="form__delete-button"></button>
                 </div>
                 <div class="form__list"></div>
                 <input
