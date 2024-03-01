@@ -77,3 +77,11 @@
   color: #525252;
   background-color: white;
 }
+
+.form__checkbox-input {
+  accent-color: #000;
+}
+
+.form__checkbox-input:checked + .form__checkbox-label {
+  text-decoration: line-through;
+}
