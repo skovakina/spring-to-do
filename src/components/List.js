@@ -34,6 +34,12 @@ export default class List {
     return element;
   }
 
+  getRandomColor() {
+    const colors = ["#FFF6E7", "#F3E4F7", "#EDBBB4", "#ECECEC", "#E5FFE6"];
+    const randomIndex = Math.floor(Math.random() * colors.length);
+    return colors[randomIndex];
+  }
+
   getListElement() {
     this._element = this._getTemplate();
     this._listTitleElement = this._element.querySelector(".form__title");
@@ -43,7 +49,9 @@ export default class List {
     this._listContainerElement = this._element.querySelector(".form__list");
     this._listTitleElement.value = this._title;
     this._listDateElement.value = this._date;
-    this._element.style.backgroundColor = this._background;
+    this._element.style.backgroundColor = this._background
+      ? this._background
+      : this.getRandomColor();
 
     const addItemToContainer = (item) => {
       const inputTemplate = this._getInputTemplate();
