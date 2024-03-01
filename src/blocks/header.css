@@ -1,8 +1,17 @@
 .header {
   height: 30px;
   width: 100%;
-  text-align: center;
-  padding: 26px 0 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 232, 195, 1) 0%,
+    rgba(189, 255, 191, 1) 36%,
+    rgba(243, 228, 247, 1) 63%,
+    rgba(237, 187, 180, 1) 100%
+  );
 }
 
 .header__header {

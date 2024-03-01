@@ -1,22 +1,19 @@
 .forms__container {
   max-width: 800px;
-  margin: 16px auto 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, 250px);
+  align-items: start;
   grid-gap: 20px 25px;
   justify-content: center;
-  align-items: center;
   list-style-type: none;
   padding: 0;
+  margin: 20px auto;
 }
 
 .forms__nav {
   max-width: 800px;
+  display: flex;
   margin: 0 auto;
-}
-
-.forms {
-  margin: 30px 30px;
 }
 
 .forms__nav-button {
@@ -45,9 +42,21 @@
 
 @media screen and (max-width: 860px) {
   .forms__container {
-    max-width: 90%;
+    padding: 0 20px;
+    grid-template-columns: repeat(auto-fit, 240px);
+    grid-gap: 20px 20px;
   }
   .forms__nav {
-    max-width: 250px;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .forms__container {
+    grid-template-columns: 1fr;
+  }
+
+  .forms__nav-button {
+    width: 100%;
   }
 }

@@ -1,11 +1,8 @@
 .main {
   width: 100%;
   background-color: white;
-  /* min-height: 900px; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 36px 0 12px;
 }
 
 .main__header {
@@ -15,14 +12,13 @@
   align-items: center;
   max-width: 800px;
   width: 100%;
-  margin: 0 auto;
+  margin: 60px auto 30px;
 }
 
 .main__header-text {
   font-family: "Figtree";
   font-weight: 600;
-  /* margin-top: 143px; */
-  height: 50px;
+
   font-size: 42px;
   margin: 0;
 }
@@ -30,43 +26,48 @@
 .main__info-text {
   display: flex;
   justify-content: flex-end;
-  font-family: "Figtree";
-  font-size: 20px;
   margin: 0;
 }
 
 .main__weather-text {
   display: flex;
   justify-content: flex-end;
-  font-size: 20px;
-  font-family: "Figtree";
   margin: 0;
 }
 
 .main__info-container {
   display: flex;
   justify-content: space-between;
-  width: 200px;
+  gap: 30px;
+  font-family: "Figtree";
+  font-weight: 500;
+  font-size: 20px;
 }
 
-.main__span {
+.main__info-weather {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 3px;
 }
+@media screen and (max-width: 800px) {
+  .main__header {
+    padding: 0 20px;
+  }
+}
 
-@media screen and (max-width: 583px) {
+@media screen and (max-width: 500px) {
   .main__header {
     flex-direction: column;
+    align-items: flex-start;
   }
   .main__header-text {
     margin-bottom: 15px;
     font-size: 30px;
+    line-height: 30px;
   }
   .main__info-container {
     gap: 15px;
-    justify-content: center;
   }
   .main__info-text {
     font-size: 16px;
