@@ -15,6 +15,10 @@
   margin: 0 auto 20px;
 }
 
+.forms {
+  margin: 30px 0;
+}
+
 .forms__nav-button {
   background: transparent url(../images/Frame\ 21.svg) center no-repeat;
   border-style: none;
