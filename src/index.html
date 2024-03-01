@@ -23,13 +23,41 @@
       />
     </header>
     <main class="main">
-      <h1 class="main__header">Hello Emily!</h1>
-      <!-- js handles current day and temperature -->
-      <p class="main__info-text"></p>
-      <img class="main__info-weather-icon" alt="weather" />
-      <p class="main__weather-text"></p>
+      <div class="main__header">
+        <div>
+          <h1 class="main__header-text">Hello Emily!</h1>
+        </div>
+        <!-- js handles current day and temperature -->
+        <div class="main__info-container">
+          <p class="main__info-text"></p>
+          <span class="main__span">
+            <img class="main__info-weather-icon" alt="weather" />
+            <p class="main__weather-text"></p>
+          </span>
+        </div>
+      </div>
       <!-- below will be the to do lists -->
       <section class="forms">
+        <span>
+          <div class="forms__nav">
+            <button class="forms__nav-button" type="button"></button>
+          </div>
+        </span>
+        <div class="forms__container">
+          <div class="form form_default">
+            <div class="form__header">
+              <input class="form__title" type="text" placeholder="Add Title" />
+              <input class="form__date" type="date" />
+              <button class="form__delete-button"></button>
+              <!-- Please note that I didn't add a type -->
+            </div>
+            <input
+              class="form__task-input"
+              type="text"
+              placeholder="+ Add a task"
+            />
+          </div>
+        </div>
         <div class="forms__nav">
           <button class="forms__nav-button" type="button"></button>
         </div>
