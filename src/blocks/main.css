@@ -1,9 +1,10 @@
 .main {
   width: 100%;
   background-color: white;
-  min-height: 900px;
+  /* min-height: 900px; */
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 36px 0 12px;
 }
 
@@ -61,32 +62,16 @@
   }
   .main__header-text {
     margin-bottom: 15px;
+    font-size: 30px;
   }
   .main__info-container {
     gap: 15px;
     justify-content: center;
   }
   .main__info-text {
-    font-size: 18px;
+    font-size: 16px;
   }
   .main__weather-text {
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .main__header {
-    padding: 0 20px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .main__header {
-    width: 80%;
-  }
-
-  .main__header-text {
-    height: 36px;
-    font-size: 30px;
+    font-size: 16px;
   }
 }
