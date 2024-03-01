@@ -12,7 +12,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 750px;
+  max-width: 800px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -43,9 +44,8 @@
 
 .main__info-container {
   display: flex;
-  flex-direction: row;
-  gap: 36px;
-  width: 205px;
+  justify-content: space-between;
+  width: 200px;
 }
 
 .main__span {
@@ -76,7 +76,7 @@
 
 @media screen and (max-width: 800px) {
   .main__header {
-    width: 90%;
+    padding: 0 20px;
   }
 }
 
